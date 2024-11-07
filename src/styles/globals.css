@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.font-glow {
+  text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF;
+  text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.7), 0px 0px 10px rgba(0, 255, 255, 0.6);
+}
+
+.button-glow {
+  background: linear-gradient(to right, #00e1ff, #9b4dca);
+  box-shadow: 0 0 10px #00FFFF, 0 0 20px #9b4dca;
+  text-shadow: 0 0 5px #9b4dca, 0 0 10px #9b4dca;
+}
+
+
+
+
+
+
+/* Typewriter Effect */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Typewriter-style font */
+.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 3rem; /* Title font size */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typewriter 4s steps(40) 1s 1 normal both;
+}
+
+/* Sticky footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem; /* Footer font size */
+}
+
+.madeWithLove {
+  color: #00FFFF;
+}
+
+.heart {
+  color: #00FFFF;
+}
+
+
+
+
+
+
