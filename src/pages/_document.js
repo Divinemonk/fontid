@@ -24,6 +24,7 @@ class MyDocument extends Document {
           <script
             src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
             type="text/javascript"
+            defer
           ></script>
         </Head>
         <body>
